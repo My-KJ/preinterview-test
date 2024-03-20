@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
+  #output {
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int n,i,j;
+    int l;
+    
+
+    printf("Enter a number n: ");
+    scanf("%d", &n);
+    
+    printf("Enter a number i: ");
+    scanf("%d", &i);
+    
+    printf("Enter a number j: ");
+    scanf("%d", &j);
+    
+    printf("Value : %d %d %d \n",n,i,j);
+
+    for (l=1;l <= n; l++) {
+        if (l % i == 0 && n % j == 0) {
+            printf("%d: Ping Pong\n", i);
+        } else if (l % i == 0) {
+            printf("%d: Ping\n", i);
+        } else if (l % j == 0) {
+            printf("%d: Pong\n", i);
+        }
+        
+    }
+
+    return 0;
+}

@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char words[][10] = {"cat", "bat", "dog", "bird", "ant"};
+    char text[10];
+
+    printf("Input letter: ");
+    scanf("%s", text);
+
+    int found = 0;
+    int index = -1; 
+    
+    for (int i = 0; i < 5; i++) {
+        if (strstr(words[i], text) != NULL) {
+            printf("['%s']\n %d\n", words[i], i);
+            found = 1; 
+            index = i;
+        }
+    }
+    if (!found) {
+        printf("No results found", text);
+    }
+
+    return 0;
+}
